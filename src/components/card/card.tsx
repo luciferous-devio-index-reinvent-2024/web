@@ -31,15 +31,24 @@ export function Card({ post }: Props) {
         </div>
         <div className={classNames("media", Styles.CardMedia)}>
           <div className="media-left">
-            <figure className="image">
-              <LazyLoadImage
-                className={Styles.CardAvatar}
-                src={`${post.author_avatar}?d=mm&r=g`}
-                alt="avatar"
-              />
-            </figure>
+            <AnchorTargetBlank href={post.author_url}>
+              <figure className="image">
+                <LazyLoadImage
+                  className={Styles.CardAvatar}
+                  src={`${post.author_avatar}?d=mm&r=g`}
+                  alt="avatar"
+                />
+              </figure>
+            </AnchorTargetBlank>
           </div>
-          <div className="media-content has-text-left">{post.author_name}</div>
+          <div className="media-content has-text-left">
+            <AnchorTargetBlank
+              href={post.author_url}
+              className={Styles.CardAuthorName}
+            >
+              {post.author_name}
+            </AnchorTargetBlank>
+          </div>
           <div className="media-right">{post.date}</div>
         </div>
       </div>

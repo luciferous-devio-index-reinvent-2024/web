@@ -41,7 +41,7 @@ export function ModalFilter(props: Props) {
     onChange,
   );
   const checkboxesTag = createCheckboxes(
-    props.tags,
+    props.tags.filter((x) => x.count > 0),
     TypeNames.categories,
     onChange,
   );
