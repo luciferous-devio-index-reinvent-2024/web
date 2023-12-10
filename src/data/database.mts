@@ -108,7 +108,7 @@ export const DATABASE: Database = {
     },
     {
       title:
-        "「機械学習、アナリティクス系 &#8220;推し&#8221; アップデート紹介」というタイトルでre:Invent 2023の振り返り勉強会「CM re:Growth 2023」に登壇しました #AWSreInvent #cmregrowth",
+        "「機械学習、アナリティクス系 “推し” アップデート紹介」というタイトルでre:Invent 2023の振り返り勉強会「CM re:Growth 2023」に登壇しました #AWSreInvent #cmregrowth",
       url: "https://dev.classmethod.jp/articles/regrowth2023-aiml-updates/",
       category: "その他",
       tags: [
@@ -138,7 +138,7 @@ export const DATABASE: Database = {
       author_avatar:
         "https://secure.gravatar.com/avatar/6fd9af3e25312c368c79efb4efaff1b5",
       thumbnail:
-        "https://dev.classmethod.jp/articles/visiting-trend-micro-at-yardbird-venetian-awsreinvent/",
+        "https://devio2023-media.developers.io/wp-content/uploads/2023/11/20231128_095718.jpg",
     },
     {
       title: "[ レポート ] Sphere 行ってみた #SphereVegas",
