@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 5111",
-    "build": "tsc && vite build",
-    "lint": "prettier -c src/",
-    "format": "prettier -w src/",
+    "build": "tsx scripts/get_posts.mts && tsc && vite build",
+    "lint": "prettier -c src/ scripts/",
+    "format": "prettier -w src/ scripts/",
     "preview": "vite preview",
     "call-ngrok": "tsx scripts/ngrok.mts"
   },
