@@ -4,16 +4,24 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5111",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "prettier -c src/",
+    "format": "prettier -w src/",
+    "preview": "vite preview",
+    "call-ngrok": "tsx scripts/ngrok.mts"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@ngrok/ngrok": "^0.9.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20.10.4",
+    "@types/qrcode-terminal": "^0.12.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
@@ -22,6 +30,9 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "prettier": "^3.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "tsx": "^4.6.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
   }
