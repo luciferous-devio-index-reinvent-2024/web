@@ -15,7 +15,8 @@
     "bulma": "^0.9.4",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0"
   },
   "devDependencies": {
     "@ngrok/ngrok": "^0.9.1",
@@ -24,6 +25,7 @@
     "@types/qrcode-terminal": "^0.12.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@types/react-lazy-load-image-component": "^1.6.3",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react": "^4.2.0",

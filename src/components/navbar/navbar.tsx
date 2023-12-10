@@ -35,6 +35,7 @@ export function Navbar(props: Props) {
       className="navbar is-black is-spaced"
       role="navigation"
       aria-label="main navigation"
+      style={{ width: "100%" }}
     >
       <div className="navbar-brand">
         <h2 className={classNames("navbar-item", Styles.title)}>
