@@ -10,8 +10,14 @@ export type FilterItem = {
   count: number;
 };
 
+export type PostCount = {
+  all: number;
+  filtered: number;
+};
+
 export type FilterResult = {
   posts: Post[];
   categories: FilterItem[];
   tags: FilterItem[];
+  count: PostCount;
 };

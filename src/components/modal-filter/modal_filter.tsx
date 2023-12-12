@@ -1,10 +1,11 @@
-import { FilterItem, FilterCondition } from "../../types/filter.mjs";
+import { FilterItem, FilterCondition, PostCount } from "../../types/filter.mjs";
 import classNames from "classnames";
 
 type Props = {
   isActive: boolean;
   categories: FilterItem[];
   tags: FilterItem[];
+  count: PostCount;
   functionClose: () => void;
   functionUpdate: (condition: FilterCondition) => void;
 };
@@ -51,7 +52,9 @@ export function ModalFilter(props: Props) {
       <div className="modal-background" onClick={props.functionClose} />
       <div className="modal-card">
         <header className="modal-card-head">
-          <p className="modal-card-title">Filter</p>
+          <p className="modal-card-title">
+            Filter ({props.count.filtered}/{props.count.all})
+          </p>
         </header>
         <section className="modal-card-body">
           <div id={elementId.category}>

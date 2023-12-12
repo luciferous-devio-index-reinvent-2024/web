@@ -2,3 +2,10 @@
   margin-top: 10px;
   margin-left: 10px;
 }
+
+.CountTop {
+  display: inline-block;
+  font-size: 1.35rem;
+  margin-top: 0.75rem;
+  margin-left: 1rem;
+}

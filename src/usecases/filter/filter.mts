@@ -25,6 +25,10 @@ export function execFilter(condition: FilterCondition): FilterResult {
         count: count.tags[x] ?? 0,
       };
     }),
+    count: {
+      all: DATABASE.posts.length,
+      filtered: filteredPost.length,
+    },
   };
 }
 

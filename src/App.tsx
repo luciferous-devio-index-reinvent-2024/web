@@ -38,6 +38,9 @@ function App() {
           >
             filter
           </button>
+          <span className={Styles.CountTop}>
+            ({filtered.count.filtered}/{filtered.count.all})
+          </span>
           <hr />
           <div className="has-text-centered">{cards}</div>
         </div>
@@ -46,6 +49,7 @@ function App() {
         isActive={showModalFilter}
         categories={filtered.categories}
         tags={filtered.tags}
+        count={filtered.count}
         functionClose={() => setShowModalFilter(false)}
         functionUpdate={(x) => setCondition(x)}
       />
