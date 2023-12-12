@@ -3,7 +3,7 @@ import Card from "./components/card";
 import ModalAbout from "./components/modal-about";
 import ModalFilter from "./components/modal-filter";
 import Navbar, { NavbarMenuItem } from "./components/navbar";
-import useGA4 from "./hooks/ga4";
+import useGA4 from "./hooks/ga4/index.mjs";
 import { FilterCondition } from "./types/filter.mjs";
 import { execFilter } from "./usecases/filter/filter.mjs";
 import classNames from "classnames";
