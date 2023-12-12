@@ -3,12 +3,14 @@ import Card from "./components/card";
 import ModalAbout from "./components/modal-about";
 import ModalFilter from "./components/modal-filter";
 import Navbar, { NavbarMenuItem } from "./components/navbar";
+import useGA4 from "./hooks/ga4";
 import { FilterCondition } from "./types/filter.mjs";
 import { execFilter } from "./usecases/filter/filter.mjs";
 import classNames from "classnames";
 import { useState } from "react";
 
 function App() {
+  useGA4();
   const menuItems: NavbarMenuItem[] = [
     {
       text: "about",
