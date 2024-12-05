@@ -44,7 +44,7 @@ function App() {
             ({filtered.count.filtered}/{filtered.count.all})
           </span>
           <hr />
-          <div className="has-text-centered">{cards}</div>
+          <div className="has-text-centered is-flex is-justify-content-center">{cards}</div>
         </div>
       </section>
       <ModalFilter
