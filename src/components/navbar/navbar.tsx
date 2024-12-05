@@ -39,7 +39,7 @@ export function Navbar(props: Props) {
     >
       <div className="navbar-brand">
         <h2 className={classNames("navbar-item", Styles.title)}>
-          Developers.IO re:Invent 2023 索引
+          Developers.IO re:Invent 2024 索引
         </h2>
         {burger}
       </div>

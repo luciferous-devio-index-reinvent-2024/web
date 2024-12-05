@@ -7,7 +7,7 @@ type Props = {
 };
 
 const urlIssue: string =
-  "https://github.com/luciferous-devio-index-reinvent-2023/web/issues";
+  "https://github.com/luciferous-devio-index-reinvent-2024/web/issues";
 
 export function ModalAbout(props: Props) {
   const issue = <AnchorTargetBlank href={urlIssue}>Issue</AnchorTargetBlank>;
@@ -22,7 +22,7 @@ export function ModalAbout(props: Props) {
         </header>
         <section className="modal-card-body">
           <p className="mb-2">
-            DevelopersIOにおけるre:Invent 2023の記事は非常に多数あります。
+            DevelopersIOにおけるre:Invent 2024の記事は非常に多数あります。
           </p>
           <p className="mb-2">
             どんなものがあるか探そうとするとなかなか難しいので索引となるサイトを作ってみました。
