@@ -1,22 +1,23 @@
 import Styles from "./App.module.css";
 import Card from "./components/card";
+import { HelmetGa4 } from "./components/helmet-ga4";
 import ModalAbout from "./components/modal-about";
 import ModalFilter from "./components/modal-filter";
 import Navbar, { NavbarMenuItem } from "./components/navbar";
-import useGA4 from "./hooks/ga4/index.mjs";
 import { FilterCondition } from "./types/filter.mjs";
 import { execFilter } from "./usecases/filter/filter.mjs";
 import classNames from "classnames";
 import { useState } from "react";
 
 function App() {
-  useGA4();
   const menuItems: NavbarMenuItem[] = [
     {
       text: "about",
       onClick: () => setShowModalAbout(true),
     },
   ];
+  const ga4MeasurementId: string | undefined = import.meta.env.VITE_GA4_MEASUREMENT_ID;
+  const helmetGa4 = ga4MeasurementId == null ? null : <HelmetGa4 ga4MeasurementId={ga4MeasurementId} />
 
   const [condition, setCondition] = useState<FilterCondition>({
     categories: [],
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      {helmetGa4}
       <Navbar menuItems={menuItems} />
       <section>
         <div className="container">
@@ -44,7 +46,9 @@ function App() {
             ({filtered.count.filtered}/{filtered.count.all})
           </span>
           <hr />
-          <div className="has-text-centered is-flex is-justify-content-center is-flex-wrap-wrap">{cards}</div>
+          <div className="has-text-centered is-flex is-justify-content-center is-flex-wrap-wrap">
+            {cards}
+          </div>
         </div>
       </section>
       <ModalFilter
